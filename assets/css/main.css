@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  color: #b5b6b7;
+  font-family: 'Raleway', sans-serif;
+  font-size: 10px;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.main-container {
+  background-color: red;
+  font-size: 1.4rem;
+  height: 500px;
+  padding: 0 20%;
+}
+
+.indications {
+  background-color: white;
+  padding-top: 75px;
+}
+
+.indications p{
+  line-height: 1.75;
+  margin-bottom: 1em;
+}
+
+.indications p a {
+  color: #ED935E;
+  /*color: #EA6616;*/
+  text-decoration: none;
+}
+
+.indications p strong {
+  color: #3E3F40;
+  text-decoration: underline;
+}
