@@ -13,19 +13,18 @@ body {
   font-size: 10px;
 }
 
+.main-container {
+  font-size: 1.4rem;
+  padding: 0 20%;
+}
+
 .text-uppercase {
   text-transform: uppercase;
 }
 
-.main-container {
-  background-color: red;
-  font-size: 1.4rem;
-  height: 500px;
-  padding: 0 20%;
-}
-
+/*Sección de Indicaciones*/
 .indications {
-  background-color: white;
+  background-color: red;
   padding-top: 75px;
 }
 
@@ -43,4 +42,32 @@ body {
 .indications p strong {
   color: #3E3F40;
   text-decoration: underline;
+}
+/*Formulario de Registro*/
+.form {
+  background-color: blue;
+}
+
+.representative {
+  background: green;
+  height: 500px;
+  position: relative;
+}
+
+.representative label{
+  display: block;
+}
+
+.representative .column-left {
+  background-color: yellow;
+  left: 0;
+  position: absolute;
+  width: 50%;
+}
+
+.representative .column-right {
+  background-color: purple;
+  position: absolute;
+  right: 0;
+  width: 50%;
 }
