@@ -14,23 +14,23 @@ body {
 }
 
 .main-container {
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   padding: 0 20%;
 }
 
+/*Sección de Indicaciones*/
 .text-uppercase {
   text-transform: uppercase;
 }
 
-/*Sección de Indicaciones*/
 .indications {
-  background-color: red;
-  padding-top: 75px;
+  padding-top: 5em;
+  padding-bottom: 1em;
 }
 
 .indications p{
   line-height: 1.75;
-  margin-bottom: 1em;
+  padding-bottom: 1em;
 }
 
 .indications p a {
@@ -43,31 +43,74 @@ body {
   color: #3E3F40;
   text-decoration: underline;
 }
+
 /*Formulario de Registro*/
 .form {
-  background-color: blue;
+
 }
 
-.representative {
-  background: green;
-  height: 500px;
-  position: relative;
+h1, h2 {
+  color: #3E3F40;
 }
 
-.representative label{
+h2, label {
+  padding: 14px 0;
+}
+
+.column-left {
+  background-color: yellow;
+  float: left;
+  width: 50%;
+}
+
+.column-right {
+  background-color: purple;
+  float: right;
+  width: 50%;
+}
+
+label{
   display: block;
 }
 
-.representative .column-left {
-  background-color: yellow;
-  left: 0;
-  position: absolute;
-  width: 50%;
+label[for="sex-representative"], label[for="public-records"], label[for="region"] {
+  color: #707274;
+  padding: 0 0 14px 0;
 }
 
-.representative .column-right {
-  background-color: purple;
-  position: absolute;
-  right: 0;
-  width: 50%;
+/*Seccion Datos del Representante*/
+.data-representative, .data-entity {
+  overflow: auto;
 }
+
+.data-representative .column-right label:nth-child(7) {
+  margin-top: 113px;
+}
+
+/*Seccion Datos de la Entidad*/
+.data-entity {
+
+}
+
+.data-entity .column-left > .answer {
+  margin-bottom: 14px;
+}
+
+.data-entity .column-left label:nth-child(9) {
+  margin-top: 887px;
+}
+
+.data-entity label > span {
+  color: red;
+  font-weight: bold;
+}
+
+.data-entity .column-right label:nth-child(1) {
+  line-height: 1.4;
+}
+
+.data-entity .column-right p:nth-child(3) {
+  color: #3E3F40;
+}
+
+/*Seccion Información Estrátegica de la Entidad*/

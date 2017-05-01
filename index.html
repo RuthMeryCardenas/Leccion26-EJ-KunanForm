@@ -24,15 +24,15 @@
     </section>
     <form id="registration-form" class="form" method="post">
       <h1>Formulario de Registro</h1>
-      <section class="representative">
+      <section class="data-representative">
         <h2>Datos del representante de la entidad postulante</h2>
         <div class="column-left">
-          <label for="">Apellidos:</label>
-          <input type="text" value="">
-          <label for="">Fecha de Nacimiento (dd/mm/yyyy):</label>
-          <input type="text" value="">
-          <label for="">Región de nacimiento:</label>
-          <select name="">
+          <label>Apellidos:</label>
+          <input class="answer" type="text">
+          <label>Fecha de Nacimiento (dd/mm/yyyy):</label>
+          <input class="answer" type="text">
+          <label>Región de nacimiento:</label>
+          <select class="answer">
             <option value="">Amazonas</option>
             <option value="">Áncash</option>
             <option value="">Apurímac</option>
@@ -59,21 +59,21 @@
             <option value="">Tumbes</option>
             <option value="">Ucayali</option>
           </select>
-          <label for="">Sexo</label>
-          <label for=""><input type="checkbox" name="" value="">Masculino</label>
-          <label for=""><input type="checkbox" name="" value="">Femenino</label>
-          <label for="">Profesión:</label>
-          <input type="text" value="">
-          <label for="">Tiempo en dicho cargo en cantidad de meses:</label>
-          <input type="text" value="">
+          <label>Sexo</label>
+          <label for="sex-representative"><input class="answer" type="radio" name="sex-representative">Masculino</label>
+          <label for="sex-representative"><input class="answer" type="radio" name="sex-representative">Femenino</label>
+          <label>Profesión:</label>
+          <input class="answer" type="text">
+          <label>Tiempo en dicho cargo en cantidad de meses:</label>
+          <input class="answer" type="text">
         </div>
         <div class="column-right">
-          <label for="">Nombres:</label>
-          <input type="text" value="">
-          <label for="">Edad:</label>
-          <input type="text" value="">
-          <label for="">Región de residencia:</label>
-          <select name="">
+          <label>Nombres:</label>
+          <input class="answer" type="text">
+          <label>Edad:</label>
+          <input class="answer" type="text">
+          <label>Región de residencia:</label>
+          <select class="answer">
             <option value="">Amazonas</option>
             <option value="">Áncash</option>
             <option value="">Apurímac</option>
@@ -100,10 +100,82 @@
             <option value="">Tumbes</option>
             <option value="">Ucayali</option>
           </select>
-          <label for="">Cargo en la organización:</label>
-          <input type="text" value="">
-          <label for="">Tiempo en la organización en cantidad de meses:</label>
-          <input type="text" value="">
+          <label>Cargo en la organización:</label>
+          <input class="answer" type="text">
+          <label>Tiempo en la organización en cantidad de meses:</label>
+          <input class="answer" type="text">
+        </div>
+      </section>
+      <section class="data-entity">
+        <h2>Datos de la entidad postulante</h2>
+        <div class="column-left">
+          <label>Nombre de la Entidad</label>
+          <input class="answer" type="text">
+          <label>¿Cuándo comenzaron a operar? (dd/mm/yyyy)</label>
+          <input class="answer" type="text">
+          <label>Tipo de organización</label>
+          <select class="answer">
+            <option value="">ONG</option>
+            <option value="">Fundaciones</option>
+            <option value="">Asociación Civil</option>
+            <option value="">Empresa</option>
+            <option value="">Persona Natural</option>
+            <option value="">Otros</option>
+          </select>
+          <label>Otros</label>
+          <input class="answer" type="text" value="">
+          <label>¿Está inscrita en Registros Públicos?<span>*</span></label>
+          <label for="public-records"><input class="answer" type="radio" name="public-records">Si</label>
+          <label for="public-records"><input class="answer" type="radio" name="public-records">No</label>
+        </div>
+        <div class="column-right">
+          <label>
+            <p>Ámbito de intervención:</p>
+            <p>¿Cuáles son las regiones, provincia y distritos donde se sitúan sus operaciones a lo largo de toda la cadena del negocio?</p>
+            <p>Regiones</p>
+          </label>
+          <label for="region"><input type="checkbox" value="">Amazonas</label>
+          <labeL for="region"><input type="checkbox" value="">Áncash</label>
+          <label for="region"><input type="checkbox" value="">Apurímac</label>
+          <label for="region"><input type="checkbox" value="">Arequipa</label>
+          <label for="region"><input type="checkbox" value="">Ayacucho</label>
+          <label for="region"><input type="checkbox" value="">Cajamarca</label>
+          <label for="region"><input type="checkbox" value="">Callao</label>
+          <label for="region"><input type="checkbox" value="">Cuzco</label>
+          <label for="region"><input type="checkbox" value="">Huancavelica</label>
+          <label for="region"><input type="checkbox" value="">Huánuco</label>
+          <label for="region"><input type="checkbox" value="">Ica</label>
+          <label for="region"><input type="checkbox" value="">Junín</label>
+          <label for="region"><input type="checkbox" value="">La Libertad</label>
+          <label for="region"><input type="checkbox" value="">Lambayeque</label>
+          <label for="region"><input type="checkbox" value="">Lima</label>
+          <label for="region"><input type="checkbox" value="">Loreto</label>
+          <label for="region"><input type="checkbox" value="">Madre de Dios</label>
+          <label for="region"><input type="checkbox" value="">Moquegua</label>
+          <label for="region"><input type="checkbox" value="">Pasco</label>
+          <label for="region"><input type="checkbox" value="">Piura</label>
+          <label for="region"><input type="checkbox" value="">Puno</label>
+          <label for="region"><input type="checkbox" value="">San Martín</label>
+          <label for="region"><input type="checkbox" value="">Tacna</label>
+          <label for="region"><input type="checkbox" value="">Tumbes</label>
+          <label for="region"><input type="checkbox" value="">Ucayali</label>
+          <label>
+            <p>Indicar las provincias en las que intervienen tu emprendimiento respecto a las regiones marcadas anteriormente.</p>
+            <p>Provincia</p>
+          </label>
+          <input class="answer" type="text" value="">
+          <label>
+            <p>Indicar los distritos en las que intervienen tu emprendimiento respecto a las provincias marcadas anteriormente</p>
+            <p>Distrito</p>
+          </label>
+          <input class="answer" type="text" value="">
+          <label>
+            <p>Si responde “SÍ”, llena las siguientes opciones:</p>
+            <p>RUC</p>
+          </label>
+          <input class="answer" type="text" value="">
+          <label>¿Cuándo se constituyeron? (dd/mm/yyyy)</label>
+          <input class="answer" type="text" value="">
         </div>
       </section>
     </form>
