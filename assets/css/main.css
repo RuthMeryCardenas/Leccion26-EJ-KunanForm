@@ -15,14 +15,27 @@ body {
 
 .main-container {
   font-size: 1.6rem;
-  padding: 0 20%;
+  padding: 0 17%;
 }
 
-/*Sección de Indicaciones*/
 .text-uppercase {
   text-transform: uppercase;
 }
 
+.text-italic {
+  font-style: italic;
+}
+
+.text-color-red {
+  color: red;
+  font-weight: bold;
+}
+
+.text-color-dark-gray {
+  color: #3E3F40;
+}
+
+/*Sección de Indicaciones*/
 .indications {
   padding-top: 5em;
   padding-bottom: 1em;
@@ -33,13 +46,13 @@ body {
   padding-bottom: 1em;
 }
 
-.indications p a {
+.indications p > a {
   color: #ED935E;
   /*color: #EA6616;*/
   text-decoration: none;
 }
 
-.indications p strong {
+.indications p > strong {
   color: #3E3F40;
   text-decoration: underline;
 }
@@ -49,7 +62,19 @@ body {
 
 }
 
-h1, h2 {
+.column-left {
+  float: left;
+  overflow: auto;
+  width: 50%;
+}
+
+.column-right {
+  float: right;
+  overflow: auto;
+  width: 50%;
+}
+
+h1, h2, h3 {
   color: #3E3F40;
 }
 
@@ -57,60 +82,91 @@ h2, label {
   padding: 14px 0;
 }
 
-.column-left {
-  background-color: yellow;
-  float: left;
-  width: 50%;
+h3 {
+  padding-top: 14px;
 }
-
-.column-right {
-  background-color: purple;
-  float: right;
-  width: 50%;
-}
-
 label{
   display: block;
 }
 
-label[for="sex-representative"], label[for="public-records"], label[for="region"] {
+select {
+  color: #707274;
+  font-size: 1.6rem;
+}
+
+label[for="input-radio"], label[for="input-checkbox"] {
   color: #707274;
   padding: 0 0 14px 0;
 }
 
 /*Seccion Datos del Representante*/
-.data-representative, .data-entity {
+#data-representative, #data-entity, #human-resources {
   overflow: auto;
 }
 
-.data-representative .column-right label:nth-child(7) {
-  margin-top: 113px;
+#data-representative .column-right label:nth-child(7) {
+  margin-top: 115px;
 }
 
 /*Seccion Datos de la Entidad*/
-.data-entity {
+#data-entity {
 
 }
 
-.data-entity .column-left > .answer {
+#data-entity .column-left > .answer, #data-entity .column-right > .answer {
   margin-bottom: 14px;
 }
 
-.data-entity .column-left label:nth-child(9) {
-  margin-top: 887px;
+#data-entity .column-left label:nth-child(9) {
+  margin-top: 870px;
 }
 
-.data-entity label > span {
-  color: red;
-  font-weight: bold;
-}
-
-.data-entity .column-right label:nth-child(1) {
+#data-entity .column-right label:nth-child(1) {
   line-height: 1.4;
 }
 
-.data-entity .column-right p:nth-child(3) {
+#data-entity .column-right p:nth-child(3) {
   color: #3E3F40;
 }
 
+#data-entity .column-right input:nth-last-child(1) {
+  margin-bottom: 0;
+}
+
 /*Seccion Información Estrátegica de la Entidad*/
+#strategic-information-entity {
+  box-sizing: border-box;
+}
+
+#strategic-information-entity  label > p {
+  line-height: 1.75;
+}
+
+#strategic-information-entity p.text-italic {
+  padding-bottom: 14px;
+}
+
+/*Seccion de Recursos Humanos*/
+#human-resources {
+  background-color: red;
+}
+
+#human-resources > p {
+  padding: 14px 0;
+}
+
+#human-resources .column-left {
+  background-color: skyBlue;
+}
+
+#human-resources .column-right {
+  background-color: pink;
+}
+
+#human-resources .column-center {
+  float: left;
+}
+
+#human-resources .column-center > p {
+  padding-top: 14px;
+}
